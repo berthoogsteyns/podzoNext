@@ -1,0 +1,64 @@
+.nav {
+  height: 2rem;
+  background-color: white;
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 1.1rem;
+  justify-content: space-between;
+
+  &_links {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-right: 8%;
+
+    &_link {
+      margin: auto 0.5rem;
+      color: #939393;
+      padding: 0.5rem;
+    }
+
+    &_link:active {
+      color: #ff6000;
+    }
+
+    &_link:hover {
+      color: #ff6000;
+    }
+
+    &_link:visited {
+      color: #ff6000;
+    }
+
+    &_signup {
+      a {
+        color: white !important;
+        margin: auto;
+        padding: 0.2rem 3rem;
+      }
+      display: flex;
+      align-content: center;
+      border-radius: 3px;
+      background-color: #ff6000;
+    }
+
+    &_vl {
+      border-left: 2px solid black;
+      height: 1rem;
+      margin: auto 0rem auto 0rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &_logo {
+    margin: auto;
+    margin-left: 8%;
+    padding: 0.5rem;
+    &_image {
+      height: 0.9rem;
+    }
+  }
+}

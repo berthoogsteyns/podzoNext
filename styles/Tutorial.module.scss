@@ -1,0 +1,96 @@
+.container {
+  display: grid;
+  height: 90rem;
+  grid-template-rows: 60% 40%;
+
+  &_tutorial {
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+    &_header {
+      font-size: 3.5em;
+      margin: 5% auto auto auto;
+    }
+
+    &_steps {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+
+      &_step {
+        width: 30%;
+        padding: 1rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        &_image {
+          margin: auto;
+          height: 6rem;
+        }
+
+        h2 {
+          margin: 2rem auto;
+        }
+
+        p {
+          text-align: center;
+          width: 60%;
+          justify-content: center;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  &_getapp {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row;
+    background-color: #ff6000;
+
+    &_phone {
+      grid-column-start: 1;
+
+      height: 50rem;
+      margin-top: -10rem;
+      margin-right: 2rem;
+    }
+
+    &_right {
+      grid-column-start: 2;
+      margin: 10rem auto auto 2rem;
+      display: flex;
+      flex-direction: column;
+
+      &_header {
+        font-size: 3em;
+        font-weight: 600;
+        padding: 1rem;
+        margin: auto;
+      }
+
+      p {
+        margin: auto auto 2rem auto;
+        padding: 1rem;
+        width: 20rem;
+        text-align: center;
+      }
+
+      &_button {
+        margin: auto auto auto 2.7rem;
+        width: 10rem;
+        color: #ff6000;
+        border-style: none;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        padding: 0.3rem 1rem;
+        background-color: white;
+        align-items: flex-start;
+      }
+    }
+  }
+}

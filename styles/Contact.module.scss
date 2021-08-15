@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  //   grid-template-columns: 50% 50%;
+  background-color: #3b3b3b;
+  color: white;
+  flex-direction: row;
+  height: 30rem;
+
+  &_left {
+    align-self: center;
+    width: 40%;
+    margin: auto;
+
+    &_header {
+      color: white;
+      font-size: 3em;
+      font-weight: 600;
+      margin: 1rem auto 4rem auto;
+      text-align: center;
+      width: fit-content;
+    }
+
+    &_info {
+      margin: auto;
+      justify-content: center;
+      width: 15rem;
+      margin-bottom: 2rem;
+    }
+
+    &_social {
+      margin: auto;
+      justify-content: center;
+      width: 15rem;
+      a {
+        margin-right: 0.6rem;
+      }
+    }
+
+    svg {
+      color: white;
+      padding: 0.5rem;
+      border-radius: 100%;
+      background-color: black;
+    }
+  }
+
+  &-divider {
+    align-self: center;
+    height: 100%;
+    border-left: black solid 1px;
+  }
+
+  &_right {
+    align-self: center;
+    margin: auto auto;
+    width: 60%;
+
+    &_form {
+      padding: 2rem;
+      display: grid;
+      grid-template-rows: 30% auto 30%;
+      grid-template-columns: 50% 50%;
+      row-gap: 1.3rem;
+      column-gap: 1.3rem;
+      margin: auto;
+      column-gap: 0;
+      align-self: center;
+      width: 45rem;
+
+      input,
+      textarea {
+        border-radius: 4px;
+        border-style: none;
+      }
+
+      &_name {
+        margin: auto;
+        height: 3rem;
+        width: 90%;
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: end;
+        margin-right: 0.5rem;
+      }
+      &_email {
+        margin: auto;
+        height: 3rem;
+        width: 90%;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        justify-self: start;
+        margin-left: 0.5rem;
+      }
+
+      &_message {
+        line-height: 2rem;
+        height: 7rem;
+        width: 93%;
+        margin: auto;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+      }
+
+      &_button {
+        cursor: pointer;
+        width: 10rem;
+        border-style: none;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        padding: 0.5rem 2rem;
+        background-color: #ff6000;
+        justify-self: end;
+        margin-right: 7%;
+        color: white;
+        font-weight: 600;
+        font-size: 0.9em;
+      }
+    }
+  }
+}

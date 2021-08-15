@@ -1,0 +1,29 @@
+.carousel_container {
+  background: #f5fafc;
+  display: flex;
+  flex-direction: column;
+
+  &_header {
+    margin: 3rem auto auto auto;
+    width: auto;
+    text-align: center;
+  }
+
+  &_slider {
+    margin: 5rem auto;
+    width: 70%;
+  }
+
+  &_button {
+    width: 10rem;
+    margin: auto auto 10rem auto;
+    border-style: none;
+    padding: 0.5rem 2rem;
+    background-color: #ff6000;
+    justify-self: end;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+}

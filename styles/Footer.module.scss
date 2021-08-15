@@ -1,0 +1,40 @@
+.footer {
+  height: 6rem;
+  background-color: #151515;
+  display: flex;
+  //grid-template-columns: 30% 70%;
+
+  p {
+    color: lightgray;
+  }
+
+  &_left {
+    width: 40%;
+    align-self: center;
+    &_awesomity {
+      margin: auto;
+      text-align: center;
+      span {
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &_right {
+    width: 60%;
+    align-self: center;
+    &_name {
+      padding: 2rem;
+      width: 42rem;
+      text-align: end;
+      margin: auto;
+      justify-self: end;
+
+      span {
+        font-weight: 600;
+        color: #ff6000;
+      }
+    }
+  }
+}
