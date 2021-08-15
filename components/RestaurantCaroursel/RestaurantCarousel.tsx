@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useGetRestaurants } from "../../lib/swr/restaurants";
 
-const NextArrow = (props) => {
+const NextArrow = (props: any) => {
   const { onClick } = props;
   return (
     <div className={`${styles.arrow} ${styles.arrow_next}`} onClick={onClick}>
@@ -18,7 +18,7 @@ const NextArrow = (props) => {
   );
 };
 
-const PreviousArrow = (props) => {
+const PreviousArrow = (props: any) => {
   const { onClick } = props;
   return (
     <div className={`${styles.arrow} ${styles.arrow_prev}`} onClick={onClick}>
